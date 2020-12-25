@@ -1,0 +1,28 @@
+1. for(i=1;i<=n;i++)
+for(j=i;i<=n;j++)
+printf("Hi");
+
+solution:
+
+At each iteration of the inner loop work done is a follows
+
+n
+n-1
+n-2
+....
+...
+1
+So total work done will be n+(n-1)+(n-2)+...+...+1, which turn out to be the sum of n natural numbers i.e n*(n+1)/2 so time complexity is O(n^2).
+
+2. for(i=1;i<=n;i*=3)
+for(j=1;i<=n;j++)
+printf("Hello");
+
+
+solution:
+
+Number of times, we can double a number till it is less than n would be log(n).
+Let’s take the examples here.
+So, j would run for O(log n) steps.
+i runs for n/3 steps.
+So, total steps = O(n/ 3 * log (n)) = O(n*logn).
